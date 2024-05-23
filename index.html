@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+</head>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .background-form {
+        background-color: lightgrey;
+        width: 800px;
+        margin-left: 150px;
+    }
+
+    .search {
+        background-color: blue
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    h3 {
+        padding-left: 300px;
+    }
+
+    .title-enter {
+        padding-left: 430px;
+    }
+
+    .title {
+        background-color: grey;
+    }
+
+    button {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    input {
+        height: 30px;
+        width: 300px;
+    }
+
+    label {
+        width: 100px;
+    }
+
+    .background {
+        background-color: blue;
+        color: whitesmoke;
+    }
+
+    #inventory input {
+        width: 60px
+    }
+</style>
+<body>
+<button onclick="showImport()">Import</button>
+<button class='background' onclick="showImportAdd()">Enter Import</button>
+<br>
+<button onclick="showExport()">Export</button>
+<button class='background' onclick="showExportAdd()">Enter Export</button>
+<br>
+<button onclick="showInventory()">Inventory</button>
+<div id="storage">
+
+</div>
+<script src="import.js"></script>
+<script src="export.js"></script>
+<script src="storage.js"></script>
+<script src="main.js"></script>
+<script src="main-export.js"></script>
+<script src="main-inventory.js"></script>
+
+
+</body>
+</html>
